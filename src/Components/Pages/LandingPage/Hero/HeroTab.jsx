@@ -11,7 +11,7 @@ import GamingIcon from '../../../Images/Icons/GamingIcon';
 import BabyProductIcon from '../../../Images/Icons/BabyProductIcon';
 import HealthBeutyIcon from '../../../Images/Icons/HealthBeautyIcon';
 import ElecronicsIcon from '../../../Images/Icons/ElecronicsIcon';
-import {faBars} from '@fortawesome/free-solid-svg-icons';
+
 
 const HeroTab = () => { 
   const options = [
@@ -29,9 +29,6 @@ const HeroTab = () => {
   return (
     <div className="hero-tab">
       <p className='select'>Select any category below</p>
-      <div className="menu">
-          <FontAwesomeIcon icon={faBars} />
-        </div>
      <div className='options'>
         {options.map((option, index) =>(
           <div className="option">
