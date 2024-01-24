@@ -1,0 +1,43 @@
+.custom-slider {
+    position: relative;
+    width: 100%;
+    max-width: 600px; /* Set your desired max-width */
+    margin: 0 auto;
+  }
+  
+  .slider-content {
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }
+  
+  .active {
+    transform: translateX(0);
+  }
+  

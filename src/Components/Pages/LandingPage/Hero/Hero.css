@@ -1,0 +1,169 @@
+/* Hero */
+.hero {
+  background-color: #faf6fd;
+  display: flex;
+  gap: 1%;
+}
+
+.grey{
+  background-color: aquamarine;
+}
+
+.heroFlex {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-top: 5rem;
+  padding: 1rem;
+  gap: 5%;
+}
+
+.imageBox{
+  width: 50%;
+}
+
+.textArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1%;
+  height: 19%;
+  gap: 0;
+}
+
+.discount {
+  display: flex;
+  padding: 0;
+  margin:0;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+
+
+
+.textArea h1{
+  margin: 0;
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+  color: #633795
+}
+.textArea p {
+  margin: 0; 
+  color: #633795;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+}
+
+.textArea .span {
+  font-size: 76px;
+  line-height: 0.72;
+  font-weight: 600;
+  color: gold;
+  margin-bottom: 10px;
+  font-family: 'Poppins', sans-serif;
+  align-content: flex-start;
+}
+
+button{
+  width: 202px;
+height: 44px;
+flex-shrink: 0;
+background-color: #9A0BB4;
+color: #fff;
+border: 0px;
+cursor: pointer;
+border-radius: 8px;
+}
+
+
+/* HeroTab */
+
+.hero-tab {
+  border-radius: 0px 40px 40px 0px;
+  background: rgba(234, 188, 111, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+  padding: 30px;
+  background-color: #e1dee4;
+  font-family: 'Montserrat', sans-serif;
+}
+
+  .hero-tab .icon-container {
+    margin-right: 0.61rem;
+    padding: 10px;
+  }
+  
+  .options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    justify-content: center;
+    gap: 1.2rem;
+  }
+
+
+  .select{
+    color: rgba(8, 0, 17, 0.30);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  }
+
+  .links{
+    color: #55228f;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .option{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 7px
+  }
+  
+  
+  @media (max-width: 900px) {
+
+    .imageBox img{
+      width: 300px;
+    }
+    .textArea h1{
+      margin: 0;
+      font-size: 25px;
+    }
+
+    .textArea p {
+      font-size: 16px;
+    }
+
+    .textArea .span {
+      font-size: 56px;
+    }
+
+    button{
+      width: 140px;
+      height: 44px;
+    }
+
+    .hero-tab {
+      border-radius: 0px 40px 40px 0px;
+      background: rgba(234, 188, 111, 0.08);
+      display: flex;
+      flex-direction: column;
+      gap: 0px; 
+      padding: 10px;
+     
+      font-family: 'Montserrat', sans-serif;
+    }
+  }
+
+  @media (max-width:700px) {
+    .heroFlex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
