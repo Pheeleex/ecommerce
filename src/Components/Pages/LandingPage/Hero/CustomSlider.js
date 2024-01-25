@@ -1,6 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import './CustomSlider.css';
 
+const dotsContainerStyles = {
+  display: "flex",
+  justifyContent: "center",
+  cursor: "pointer"
+};
+
+const dotStyle = {
+  margin: "0 3px",
+  cursor: "pointer",
+  fontSize: "20px",
+  color: "purple"
+};
+
 const CustomSlider = ({ items }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -18,16 +31,20 @@ const CustomSlider = ({ items }) => {
 
   return (
     <div className="custom-slider">
-      <div className="slider-content">
-        {items.map((src, index) => (
-          <div key={index} className={`slide ${index === currentIndex ? 'active' : ''}`}>
-            <img src={src} alt={`slide-${index}`} />
+      <div className="slider-content"> 
+          <div className='image'>
+            <img src={items[currentIndex]} alt={'ski'} />
           </div>
-        ))}
       </div>
-      <div className="pagination">
-        {items.map((_, index) => (
-          <button key={index} onClick={() => goToSlide(index)} className={`pagination-button ${index === currentIndex ? 'active' : ''}`} />
+      <div style={dotsContainerStyles}>
+        {items.map((slide, index) => (
+          <div
+            style={dotStyle}
+            key={index}
+            onClick={() => goToSlide(index)}
+          >
+            ●
+          </div>
         ))}
       </div>
     </div>

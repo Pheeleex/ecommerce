@@ -5,30 +5,47 @@
   gap: 1%;
 }
 
-.grey{
-  background-color: aquamarine;
-}
 
 .heroFlex {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5rem;
   padding: 1rem;
-  gap: 5%;
 }
 
-.imageBox{
-  width: 50%;
+.imageBox {
+  width: 50%; 
+  display: flex;
+  justify-content: center;
+}
+
+.custom-slider .image{
+  width: 500px;
+  height: 400px;
+}
+
+.imageBox .custom-slider {
+  width: 100%;
+}
+
+.imageBox .custom-slider img {
+  width: 110%;
+  height: 110%;
+  transform: rotate(-7.748deg);
+  flex-shrink: 0;
+  align-self: center;
 }
 
 .textArea {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   justify-content: center;
   padding-left: 1%;
   height: 19%;
   gap: 0;
+  width: 600px;
 }
 
 .discount {
@@ -38,9 +55,6 @@
   justify-content: center;
   align-items: flex-start;
 }
-
-
-
 
 .textArea h1{
   margin: 0;
@@ -124,6 +138,17 @@ border-radius: 8px;
     width: 100%;
     gap: 7px
   }
+
+  .menu-btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #55228f;
+    display: block;
+    position: absolute;
+    display: none;
+    left: 0
+  }
   
   
   @media (max-width: 900px) {
@@ -148,17 +173,6 @@ border-radius: 8px;
       width: 140px;
       height: 44px;
     }
-
-    .hero-tab {
-      border-radius: 0px 40px 40px 0px;
-      background: rgba(234, 188, 111, 0.08);
-      display: flex;
-      flex-direction: column;
-      gap: 0px; 
-      padding: 10px;
-     
-      font-family: 'Montserrat', sans-serif;
-    }
   }
 
   @media (max-width:700px) {
@@ -166,16 +180,38 @@ border-radius: 8px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
+      align-items: flex-start;
       gap: 2rem;
       width: 100%;
+      padding-left: 16%;
     }
 
-    .imageBox img{
+    .imageBox .custom-slider .image img{
+      width: 200px;
+    }
+
+    .imageBox .custom-slider .image{
       width: 200px;
     }
 
     .hero-tab{
       display: none;
+    }
+
+    .textArea h1{
+      margin: 0;
+      font-size: 25px;
+    }
+
+    .textArea p {
+      font-size: 16px;
+    }
+
+    .textArea .span {
+      font-size: 36px;
+    }
+
+    .menu-btn{
+      display: block;
     }
   }

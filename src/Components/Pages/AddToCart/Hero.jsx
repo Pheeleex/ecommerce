@@ -11,12 +11,12 @@ const HeroCart = () => {
   const [itemNumber, setItemNumber] = useState(0);
 
   const handleIncrement = () => {
-    setItemNumber(prevItemNumber => prevItemNumber + 1);
+    setItemNumber(prevItemNumber => prevItemNumber + 1)
   };
 
   const handleDecrement = () => {
     if (itemNumber > 0) {
-      setItemNumber(prevItemNumber => prevItemNumber - 1);
+      setItemNumber(prevItemNumber => prevItemNumber - 1)
     }
   };
 
