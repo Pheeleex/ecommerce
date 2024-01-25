@@ -2,6 +2,7 @@ import React from 'react';
 import HeroTab from './HeroTab';
 import sneaker1 from '../../../Images/Item1.png';
 import sneaker2 from '../../../Images/sneaker2.png'
+import curology2 from '../../../Images/curology2.png'
 import './Hero.css';
 import 'swiper/css';
 import 'swiper/swiper-bundle.css';
@@ -11,7 +12,7 @@ import CustomSlider from './CustomSlider';
 
 const Hero = () => {
 
-  const sneakers = [sneaker1, sneaker2]
+  const sneakers = [sneaker1, sneaker2, curology2]
 
   return (
     <div className='hero'>
