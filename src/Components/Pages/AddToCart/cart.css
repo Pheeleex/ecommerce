@@ -1,3 +1,7 @@
+.heroCart-container{
+    padding: 5rem;
+}
+
 .hero-cart{
     display: flex;
     justify-content: center;
@@ -9,11 +13,15 @@
 .cart{
     display:flex;
     justify-content: flex-start;
-    width: 65%;
+    padding-left: 4rem;
+    align-items: center;
+    width: 60%;
+    gap: 2rem;
+    flex-wrap: wrap;
 }
 
 .cart .image{
-    width: 338.207px;
+    width: 20%;
     height: 372.479px;
     transform: rotate(3.611deg);
     position: relative;
@@ -25,7 +33,7 @@
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 2%;
+    top: 4%;
     left: 55%;
     width: 59.403px;
     height: 59.9px;
@@ -152,6 +160,7 @@ line-height: normal;
 
 .cart-form{
     background: rgba(255, 240, 121, 0.35);
+    width: 40%;
 }
 
 .cart-form .form .input-form{
@@ -213,7 +222,88 @@ line-height: normal;
     border: 1.2px solid #9A0BB4;
     width: fit-content;
     padding: 7px 20px;
-    margin-left: 8rem;
+    margin-left: 6%;
     margin-top: 1rem;
     border-radius: 10px;
+    flex-wrap: wrap;
 }
+
+@media (max-width: 1040px) {
+    .heroCart-container{
+        padding: 2%;
+    }
+    
+
+    .cart .image .stock{
+        top: 9%;
+        left: 55%;
+        width: 59.403px;
+        height: 59.9px;
+    }
+    
+    .in{ 
+        font-size: 15px;
+    }
+
+    .cart{
+        padding-left: 3rem;
+        align-items: center;
+        gap: 1rem
+    }
+
+    .cart .image{
+        width: 200px;
+        height: 372.479px;
+    }
+    .cart .image img{
+        width: 398.207px;
+        height: 372.479px;
+    }
+
+    .cart-form .form input,
+.cart-form .form select{
+    width: 80%;
+    height: 47px;
+    font-size: 11px;
+}
+
+.hero-cart{
+    margin-bottom: 0;
+    width: 100%;
+}
+}
+
+@media (max-width: 800px) {
+    .cart-form .form input,
+    .cart-form .form select{
+        width: 70%;
+        height: 47px;
+        font-size: 11px;
+    }
+
+    .deliver{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-btns{
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width:450px) {
+        .hero-cart{
+            flex-direction: column;
+        }
+        .cart{
+            width: 100%;
+        }
+
+        .cart-form{
+            width: 100%;
+        }
+    }
+    
+}
+

@@ -35,4 +35,18 @@
     color: #fff;
   }
 
+
+  @media (max-width: 800px) {
+    .number-tag h2 {
+      font-size: 35px;
+      margin-top: 38px;
+    }
+  }
+
+  @media (max-width:440px) {
+    .number-tag h2 {
+      font-size: 25px;
+      margin-top: 48px;
+    }
+  }
   

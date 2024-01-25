@@ -22,7 +22,7 @@ const HeroCart = () => {
 
 
   return (
-    <div style={{ padding: '5rem', paddingBottom: '1rem' }}>
+    <div  className='heroCart-container'>
       <div className='hero-cart'>
         <div className='cart'>
           <div className='image'>

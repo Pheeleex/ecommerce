@@ -54,3 +54,43 @@
     margin-left: 0;
     border-radius: 11px;
   }
+
+  @media (max-width: 850px) {
+    
+.footer {
+  gap: 2.4rem;
+}
+
+    .foot1 img{
+      width: 138px;
+      height: 116px;
+    }
+
+    .foot2 input{
+      width: 250px;
+    }
+  
+  
+    .foot2 button{
+      height: 42px;
+    }
+  }
+
+  @media (max-width: 525px) {
+    .footer {
+      gap: 1.2rem;
+    }
+    .foot1 img{
+      width: 108px;
+      height: 116px;
+    }
+
+    .foot2 input{
+      width: 150px;
+    }
+  
+  
+    .foot2 button{
+      width: 70px;
+    }
+  }

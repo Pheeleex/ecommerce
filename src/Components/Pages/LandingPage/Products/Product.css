@@ -111,4 +111,21 @@
     flex-direction: column; 
     width: 100%; 
   }
+
+  .card-container{ 
+    justify-content: flex-start;
+    align-items: center;
+    width: 99%
+  }
+
+  .products{
+    background-color: rgb(247, 242, 250);
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 4rem;
+  }
+
+  .best-prices{
+    padding: 0rem;
+  }
 }
