@@ -3,11 +3,15 @@ import React from 'react';
 import StarsIcon from '../../Images/Icons/StarsIcon';
 import './cart.css';
 import CartForm from './cartForm';
+import cardItems from '../LandingPage/ProductItems';
+import Overview from './Overview';
 import { useLocation } from 'react-router-dom';
+import MoreItems from './MoreItems';
 
 const HeroCart = () => {
   const location = useLocation();
-  const data = location.state;
+  const {group, ...data} = location.state;
+  const groupItems = cardItems.filter(item => item.group === group);
   const [itemNumber, setItemNumber] = useState(0);
 
   const handleIncrement = () => {
@@ -60,6 +64,8 @@ const HeroCart = () => {
         </div>
         <CartForm />
       </div>
+      <Overview />
+      <MoreItems groupItems={groupItems} />
     </div>
   );
 };

@@ -29,11 +29,9 @@ const Products = () => {
 
   const handleCardClick = (item) => {
     console.log("clicked", item)
-    navigate('/AddtoCart', {state: item})
+    navigate('/AddtoCart', {state: {...item, group:item.group}})
   }
-
- 
-        
+      
     return (
       <>
       <div className="products">

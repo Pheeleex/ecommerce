@@ -5,13 +5,14 @@ import CartIcon from '../../../Images/Icons/CartIcon';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faBars} from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
       <div>
         <div className='top'></div>
         <div className="nav">
-          <img src={logo} className="logo" alt="Logo" />
+          <Link><img src={logo} className="logo" alt="Logo" /></Link>
           <div className="nav-list">
             <ul>
               <li><a href="#deals">Deals</a></li>

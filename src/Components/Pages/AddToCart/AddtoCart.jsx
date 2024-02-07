@@ -7,7 +7,6 @@ const AddtoCart = () => {
   return (
     <div>
         <HeroCart />
-        <Overview />
     </div>
   )
 }

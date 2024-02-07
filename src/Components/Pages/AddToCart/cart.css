@@ -23,7 +23,6 @@
 .cart .image{
     width: 20%;
     height: 372.479px;
-    transform: rotate(3.611deg);
     position: relative;
     flex-shrink: 0;
 }
@@ -295,14 +294,29 @@ line-height: normal;
     @media (max-width:450px) {
         .hero-cart{
             flex-direction: column;
+            justify-content: center;
         }
         .cart{
             width: 100%;
+            padding-left: 2rem
         }
 
         .cart-form{
             width: 100%;
         }
+
+        .cart .image{
+           margin-left: 1rem;
+        }
+
+        .more-items .products{
+            padding-bottom: 0;
+        }
+
+        .more-items .products .card-desc{
+            margin-bottom: 0.6px;
+            padding-bottom: 0; 
+          }
     }
     
 }
